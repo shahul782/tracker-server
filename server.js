@@ -8,6 +8,9 @@ app.use(cors());
 app.use(express.json());
 connectDB();
 app.use("/api/v1", expenseRouter); 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+})
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
