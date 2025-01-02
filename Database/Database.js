@@ -25,7 +25,7 @@ const mongoose = require("mongoose");
 async function connectDB() {
   try {
 
-    const uri = "mongodb+srv://shahul1145:Shahul%40123@cluster0.q83rynw.mongodb.net/tracker?retryWrites=true&w=majority";
+    const uri = "mongodb+srv://shahul1145:Shahul%40123@cluster0.q83rynw.mongodb.net/tracker";
 
     const client = await mongoose.connect(uri, {
       useNewUrlParser: true,
