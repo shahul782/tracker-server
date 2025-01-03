@@ -4,12 +4,8 @@ const connectDB = require("./Database/Database");
 const expenseRouter = require("./Routes/Tracker"); 
 
 const app = express();
-// app.use(cors());
-app.use(cors({
-  origin: ['https://expense-tracker-travel.netlify.app'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-}));
+app.use(cors());
+
 app.use(express.json());
 connectDB();
 app.use("/api/v1", expenseRouter); 
