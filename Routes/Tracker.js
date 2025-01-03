@@ -14,13 +14,6 @@ router.post("/expenses", async (req, res) => {
   }
 });
 
-// router.get("/expenses", async (req, res) => {
-//   try {
-//     const expenses = await Expense.find();
-//     res.status(200).json(expenses);
-//   } catch (error) {
-//     res.status(500).json({ message: error.message });
-//   }
-// });
+
 
 module.exports = router;
